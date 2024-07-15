@@ -1,18 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - MyWebsite</title>
+    <title>Personal Finance Article</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="blog7.css">
+    <link rel="stylesheet" href="{% static 'blog/css/blog6.css' %}">
 </head>
 <body>
     <header>
-        <div class="logo">MyWebsite</div>
+        <div class="logo">Finx</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
@@ -21,34 +22,49 @@
     </header>
 
     <div class="container">
-        <section class="articles">
-            <article>
-                <div class="article-img">
-                    <img src="images/image1.jpg" alt="Article Image">
-                </div>
-                <div class="article-content">
-                    <h2><a href="blog6.html">Mastering Personal Finance: Key Principles</a></h2>
-                    <p>
-                        Budgeting, saving, investing, and more. Learn essential personal finance strategies.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="article-img">
-                    <img src="images/image1.jpg" alt="Article Image">
-                </div>
-                <div class="article-content">
-                    <h2><a href="article.html">Investing in Stocks: Beginner's Guide</a></h2>
-                    <p>
-                        Understand the basics of stock market investing and how to get started as a beginner.
-                    </p>
-                </div>
-            </article>
-
-            <!-- Add more articles as needed -->
-
-        </section>
+        <article>
+            <h1>Mastering Personal Finance: Key Principles</h1>
+            <p>
+                <strong>1. Budgeting</strong><br>
+                Budgeting is the cornerstone of personal finance. It involves tracking your income and expenses to understand where your money is going. By creating a budget, you can allocate funds to essential areas like housing, food, and savings. A well-planned budget helps prevent overspending and ensures that you have enough money to cover your necessities.
+            </p>
+            <p>
+                <strong>2. Saving</strong><br>
+                Saving is crucial for financial security. It's important to build an emergency fund to cover unexpected expenses, such as medical bills or car repairs. Aim to save at least three to six months' worth of living expenses. Additionally, setting aside money for short-term and long-term goals, like vacations or retirement, helps you achieve financial stability and peace of mind.
+            </p>
+            <p>
+                <strong>3. Investing</strong><br>
+                Investing allows your money to grow over time. Diversifying your investments in stocks, bonds, and real estate can help mitigate risks and increase returns. It's essential to understand your risk tolerance and investment horizon to make informed decisions. Investing early and consistently can significantly impact your financial future, providing funds for retirement and other long-term goals.
+            </p>
+            <p>
+                <strong>4. Debt Management</strong><br>
+                Managing debt effectively is key to financial health. High-interest debt, such as credit card balances, can quickly become overwhelming. Focus on paying off high-interest debt first, and consider consolidating loans to lower interest rates. Avoid taking on unnecessary debt and use credit responsibly to maintain a good credit score.
+            </p>
+            <p>
+                <strong>5. Retirement Planning</strong><br>
+                Planning for retirement is essential to ensure you have enough funds when you stop working. Contributing to retirement accounts like 401(k)s or IRAs offers tax advantages and helps grow your savings. Start saving for retirement as early as possible to take advantage of compound interest. Regularly review and adjust your retirement plan to stay on track with your goals.
+            </p>
+            <p>
+                <strong>6. Insurance</strong><br>
+                Insurance is a critical component of personal finance. It protects you from significant financial losses due to unexpected events. Health insurance, life insurance, and property insurance are some of the essential types. Ensure you have adequate coverage to safeguard your financial well-being and that of your family.
+            </p>
+            <p>
+                <strong>7. Financial Education</strong><br>
+                Continuously educating yourself about personal finance is vital. Understanding financial concepts and staying updated with economic trends helps you make informed decisions. Consider reading books, attending workshops, and consulting financial advisors to enhance your knowledge and improve your financial literacy.
+            </p>
+            <p>
+                <strong>8. Goal Setting</strong><br>
+                Setting financial goals provides direction and motivation. Whether it's buying a house, starting a business, or saving for a child's education, having clear goals helps you stay focused and disciplined. Break down your goals into manageable steps and track your progress regularly to stay on course.
+            </p>
+            <p>
+                <strong>9. Tax Planning</strong><br>
+                Efficient tax planning can save you money and increase your disposable income. Understand the tax deductions and credits available to you, and consider consulting a tax professional to optimize your tax strategy. Planning for taxes throughout the year can help you avoid surprises and make the most of your earnings.
+            </p>
+            <p>
+                <strong>10. Regular Review</strong><br>
+                Regularly reviewing your financial situation ensures that you stay on track with your goals. Periodically assess your budget, savings, investments, and debts to make necessary adjustments. Life changes, such as a new job or a growing family, may require you to re-evaluate your financial plans. Stay proactive and adapt to maintain financial health.
+            </p>
+        </article>
     </div>
 
     <footer>
