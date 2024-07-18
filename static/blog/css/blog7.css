@@ -6,13 +6,14 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
     padding: 0;
+    font-size: 16px; /* Base font size */
 }
 
 header {
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 1.25rem 0; /* Use rem units */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,8 +24,8 @@ header {
 }
 
 header .logo {
-    margin-left: 20px;
-    font-size: 1.5em;
+    margin-left: 1.25rem; /* Use rem units */
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -36,13 +37,13 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-right: 20px;
+    margin-right: 1.25rem; /* Use rem units */
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 header nav ul li a:hover {
@@ -50,14 +51,16 @@ header nav ul li a:hover {
 }
 
 .container {
-    width: 60%;
+    width: 90%; /* Adjust to fit smaller screens */
+    max-width: 1200px;
     background-color: #fff;
-    padding: 40px;
+    padding: 2.5rem; /* Use rem units */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-sizing: border-box;
     margin-top: 100px; /* Adjust based on header height */
-    margin-left: 5%; /* Align container to the left */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .articles {
@@ -68,15 +71,15 @@ header nav ul li a:hover {
 
 .articles article {
     display: flex;
-    margin-bottom: 30px;
+    flex-direction: column; /* Stack on smaller screens */
+    margin-bottom: 1.875rem; /* Use rem units */
     border-bottom: 1px solid #eee;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem; /* Use rem units */
     width: 100%; /* Ensures articles take full width */
 }
 
 .article-img {
-    margin-right: 20px;
-    flex: 0 0 auto; /* Fixes image width to its content size */
+    margin-bottom: 1.25rem; /* Add bottom margin for smaller screens */
 }
 
 .article-img img {
@@ -91,13 +94,13 @@ header nav ul li a:hover {
 }
 
 h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 0.625rem; /* Use rem units */
     color: #333;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #555;
 }
@@ -107,8 +110,8 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 1.25rem 0; /* Use rem units */
+    margin-top: 2.5rem; /* Use rem units */
     position: relative;
 }
 
@@ -124,21 +127,64 @@ footer .footer-content p {
 footer .socials {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 0.625rem 0 0; /* Use rem units */
     display: flex;
     justify-content: center;
 }
 
 footer .socials li {
-    margin: 0 10px;
+    margin: 0 0.625rem; /* Use rem units */
 }
 
 footer .socials li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 footer .socials li a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 600px) {
+    .articles article {
+        flex-direction: row; /* Row layout for larger screens */
+    }
+}
+
+@media (min-width: 768px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    footer .socials li a {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 65%;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
