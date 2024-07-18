@@ -154,7 +154,7 @@ footer .socials li a:hover {
 
 @media (min-width: 480px) {
     body {
-        font-size: 14px; /* Adjust base font size */
+        font-size: 16px; /* Adjust base font size */
     }
 
     header .logo {
