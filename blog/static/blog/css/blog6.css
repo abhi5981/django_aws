@@ -127,7 +127,7 @@ footer .socials li a:hover {
 /* Media Queries for Responsive Design */
 @media (max-width: 480px) {
     body {
-        font-size: 10px; /* Adjust base font size */
+        font-size: 16px; /* mobile phone screen */
     }
 
     header .logo {
@@ -139,7 +139,34 @@ footer .socials li a:hover {
     }
 
     .container {
-        width: 90%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 480px) {
+    body {
+        font-size:18px; /* minimum my macbook broweser window width */
+    }
+
+    header .logo {
+        font-size: 1.25em;
+    }
+
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    .container {
+        width: 95%;
     }
 
     h1 {
@@ -151,10 +178,9 @@ footer .socials li a:hover {
     }
 }
 
-
-@media (min-width: 480px) {
+@media (min-width: 768px) {
     body {
-        font-size: 16px; /* Adjust base font size */
+        font-size: 18px; /* Adjust base font size */
     }
 
     header .logo {
@@ -170,51 +196,51 @@ footer .socials li a:hover {
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     p {
-        font-size: 1.2em;
-    }
-}
-
-@media (min-width: 768px) {
-    body {
-        font-size: 15px; /* Adjust base font size */
-    }
-
-    header .logo {
-        font-size: 1.75em;
-    }
-
-    header nav ul li a {
-        font-size: 1.1em;
-    }
-
-    .container {
-        width: 70%;
-    }
-
-    h1 {
-        font-size: 2.75em;
-    }
-
-    p {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 }
 
 @media (min-width: 1024px) {
     body {
-        font-size: 13px; /* Adjust base font size */
+        font-size: 18px; /* Adjust base font size */
     }
 
     header .logo {
-        font-size: 2em;
+        font-size: 1.35em;
     }
 
     header nav ul li a {
-        font-size: 1.25em;
+        font-size: 1em;
+    }
+
+    .container {
+        width: 75%;
+    }
+
+    h1 {
+        font-size: 2.25em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px; /* my macbook full screen */
+    }
+
+    header .logo {
+        font-size: 1.35em;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
     }
 
     .container {
@@ -222,36 +248,10 @@ footer .socials li a:hover {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     p {
-        font-size: 1.4em;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        font-size: 16px; /* Adjust base font size */
-    }
-
-    header .logo {
-        font-size: 1.8em;
-    }
-
-    header nav ul li a {
-        font-size: 1.1em;
-    }
-
-    .container {
-        width: 60%;
-    }
-
-    h1 {
-        font-size: 2.8em;
-    }
-
-    p {
-        font-size: 1.25em;
+        font-size: 1em;
     }
 }

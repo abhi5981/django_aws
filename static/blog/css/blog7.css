@@ -146,10 +146,10 @@ footer .socials li a:hover {
     text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design Row layout for larger screens*/
 @media (min-width: 600px) {
     .articles article {
-        flex-direction: row; /* Row layout for larger screens */
+        flex-direction: row;  
     }
 }
 
@@ -157,7 +157,9 @@ footer .socials li a:hover {
     header .logo {
         font-size: 1.5rem;
     }
-
+    .container {
+        width: 75%;
+    }
     header nav ul li a {
         font-size: 1rem;
     }
@@ -177,7 +179,7 @@ footer .socials li a:hover {
 
 @media (min-width: 1024px) {
     .container {
-        width: 65%;
+        width: 70%;
     }
 
     h2 {
@@ -185,6 +187,6 @@ footer .socials li a:hover {
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
