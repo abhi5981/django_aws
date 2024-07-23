@@ -78,15 +78,35 @@ header nav ul li a:hover {
     width: 100%; /* Ensures articles take full width */
 }
 
+.articles article {
+    a {
+        color: #333; /* Set the desired color for links */
+        text-decoration: none; /* Remove the underline if desired */
+    }
+    
+    a:hover {
+        color: #555; /* Set the color for hover state */
+        text-decoration: underline; /* Add underline on hover if desired */
+    }
+    
+    a:visited {
+        color: #333; /* Set the color for visited links */
+    }
+    
+}
+
 .article-img {
+    width: 100%;
     margin-bottom: 1.25rem; /* Add bottom margin for smaller screens */
 }
 
 .article-img img {
     width: 100%; /* Image takes full width of the container */
-    max-width: 200px; /* Limit image width if needed */
+    max-width: 100%; /* Limit image width if needed */
     height: auto;
+    object-fit: cover;
     border-radius: 8px;
+    padding-right: 10px;
 }
 
 .article-content {
@@ -148,8 +168,11 @@ footer .socials li a:hover {
 
 /* Media Queries for Responsive Design Row layout for larger screens*/
 @media (min-width: 600px) {
-    .articles article {
-        flex-direction: row;  
+    /* .articles article {
+        flex-direction: column;  
+    } */
+    .article-img img {
+        height: 200px; /* Set a specific height for medium screens */
     }
 }
 
@@ -175,6 +198,10 @@ footer .socials li a:hover {
     footer .socials li a {
         font-size: 0.75rem;
     }
+    .article-img img {
+        max-width: 100%; /* Set max width for larger screens */
+        height: 250px; /* Set a specific height for larger screens */
+    }
 }
 
 @media (min-width: 1024px) {
@@ -188,5 +215,9 @@ footer .socials li a:hover {
 
     p {
         font-size: 1.25rem;
+    }
+    .article-img img {
+        max-width: 100%; /* Keep max width for large screens */
+        height: 300px; /* Keep specific height for large screens */
     }
 }
