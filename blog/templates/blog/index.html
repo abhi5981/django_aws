@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - FinX</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'blog/css/blog7.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/index.css' %}">
 </head>
 <body>
     <header>
@@ -28,7 +28,7 @@
                     <img src="{% static 'blog/images/image1.jpg' %}" alt="Article Image">
                 </div>
                 <div class="article-content">
-                    <h2><a href="{% url 'blog7' %}">Mastering Personal Finance: Key Principles</a></h2>
+                    <h2><a href="{% url 'personal-finance' %}">Mastering Personal Finance: Key Principles</a></h2>
                     <p>
                         Budgeting, saving, investing, and more. Learn essential personal finance strategies.
                     </p>
@@ -40,7 +40,7 @@
                     <img src="{% static 'blog/images/image1.jpg' %}" alt="Article Image">
                 </div>
                 <div class="article-content">
-                    <h2><a href="article.html">Investing in Stocks: Beginner's Guide</a></h2>
+                    <h2><a href="{% url 'personal-finance' %}">Investing in Stocks: Beginner's Guide</a></h2>
                     <p>
                         Understand the basics of stock market investing and how to get started as a beginner.
                     </p>
